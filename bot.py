@@ -1,8 +1,9 @@
 import discord
 import requests
+import os
 
-DISCORD_TOKEN = "MTQyMDcwODgxNDI4NTU3MDA3OA.G56gFZ.W7QlHn3PKRB1VXqsBxUCzJ4ZzrOqTctzVrSpBU"
-DEEPL_API_KEY = "7b1ac693-db7a-44eb-af4f-21078a95ef33:fx"
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
 DEEPL_URL = "https://api-free.deepl.com/v2/translate"
 
 # 翻訳を許可するチャンネルIDリスト
